@@ -25,4 +25,5 @@ const segregate = (ary) => {
   return returner;
 };
 
-console.log(segregate(arry))
+const idk = segregate(arry)
+console.log(idk.)
