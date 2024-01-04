@@ -1,3 +1,3 @@
 import * as human from "./functions.js"
 
-human.harm
+console.log(human.humans(1))

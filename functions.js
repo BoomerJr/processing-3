@@ -23,7 +23,7 @@ class human {
   }
 }
 
-const harmman = () => {
+const genHuman = () => {
   const first_names = ["John", "Emma", "Michael", "Olivia", "William", "Sophia", "James", "Ava", "Robert",
     "Isabella", "David", "Mia", "Richard", "Emily", "Joseph", "Abigail", "Charles", "Grace", "Thomas",
     "Charlotte", "Daniel", "Liam", "Mary", "Henry", "Ella", "Christopher", "Harper", "Patricia", "Alexander",
@@ -81,7 +81,7 @@ const harmman = () => {
 const humans = (num) =>{
     let array = []
     for(let i = 1; i<=num;i++){
-        array.push(harmman())
+        array.push(genHuman())
     }
     return array
 }
