@@ -1,4 +1,3 @@
-export { human,humans,harmman} 
 class human {
   constructor(name, adress, birth_day, payment_method) {
     this._name = name;
@@ -85,7 +84,6 @@ const humans = (num) =>{
     }
     return array
 }
-const data = {
-    human, humans,genHuman
+module.exports = {
+  human, humans,genHuman
 }
-module.exports = data
