@@ -11,7 +11,7 @@ const segregate = (ary) => {
     }
   }
   for(let i = 0;i<ary.length;i++){
-    
+     
   }
   return 
 };
