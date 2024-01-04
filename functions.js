@@ -1,3 +1,4 @@
+
 class human {
   constructor(name, adress, birth_day, payment_method) {
     this._name = name;
