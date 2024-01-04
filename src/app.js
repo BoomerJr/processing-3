@@ -5,13 +5,16 @@ const arry = [
 ];
 const segregate = (ary) => {
   let pays = [];
+  let returner = {}
   for (let i = 0; i < ary.length; i++) {
     if (!pays.includes(ary[i].payment_method)) {
       pays.push(ary[i].payment_method);
     }
   }
   for(let i = 0;i<ary.length;i++){
-     
+    if(!returner[pays[i]]){
+      returner[pays[i]] = pays[i]
+    }
   }
   return 
 };
