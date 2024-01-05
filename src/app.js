@@ -14,22 +14,22 @@ const segregate = (ary) => {
   for (let i = 0; i < ary.length; i++) {
     if (!returner[pays[i]]) {
       returner[pays[i]] = {
-        name: pays[i],
-        pushy: [],
-        get payment_method() {
-          return this.payment_method;
+        _name: pays[i],
+        _pushy: [],
+        get array() {
+          return this._pushy; 
         },
         get name() {
-          return this.name;
+          return this._name;
         },
       };
     }
     if (ary[i].payment_method === returner[pays[i]].name) {
-      returner[pays[i]].pushy.push(ary[i]);
+      returner[pays[i]]._pushy.push(ary[i]);
     }
   }
   return returner;
 };
 
 const idk = segregate(arry);
-console.log(idk.pushy);
+console.log(segregate(arry).array);
