@@ -15,7 +15,13 @@ const segregate = (ary) => {
     if (!returner[pays[i]]) {
       returner[pays[i]] = {
         name: pays[i],
-        pushy: []
+        pushy: [],
+        get payment_method() {
+          return this.payment_method;
+        },
+        get name() {
+          return this.name;
+        },
       };
     }
     if (ary[i].payment_method === returner[pays[i]].name) {
@@ -25,5 +31,5 @@ const segregate = (ary) => {
   return returner;
 };
 
-const idk = segregate(arry)
-console.log(idk.)
+const idk = segregate(arry);
+console.log(idk.pushy);
